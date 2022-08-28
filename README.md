@@ -13,7 +13,7 @@ To Start...
 To install pydogceo:
 
 ```bash
-    pip install pydogceo
+pip install pydogceo
 ```
 
 
@@ -63,7 +63,7 @@ Changelog
 ---------
 
 v0.0.1- 28/08/2022
-First Release :)
 
 ~~~~~~~~~~~~~~~~~
 
+First Release :)
