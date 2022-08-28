@@ -1,6 +1,7 @@
 from pydogceo.PyDogCeo import PyDogCeo
 from pprint import pprint
 
+
 dog = PyDogCeo()
 
 r = dog.breeds.listAll()
