@@ -1,5 +1,6 @@
-from pydogceo.PyDogCeo import PyDogCeo
 from pprint import pprint
+
+from pydogceo.PyDogCeo import PyDogCeo
 
 
 dog = PyDogCeo()
@@ -26,7 +27,6 @@ r = dog.breed.images.randomNumber("hound", 4)
 r = dog.breed.images.subbread("hound", "afghan")
 r = dog.breed.images.subbreadRandom("hound", "afghan")
 r = dog.breed.images.subbreadRandomNumber("hound", "afghan", 10)
-
 
 json = r.json()
 

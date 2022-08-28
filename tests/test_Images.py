@@ -15,12 +15,12 @@ class TestImages:
         dog = PyDogCeo()
         r = dog.breed.images.subbread("australian", "shepherd")
         assert r.status_code == 200
-    
+
     def test_subbreadRandom(self):
         dog = PyDogCeo()
         r = dog.breed.images.subbreadRandom("australian", "shepherd")
         assert r.status_code == 200
-    
+
     def test_subbreadRandomNumber(self):
         dog = PyDogCeo()
         r = dog.breed.images.subbreadRandomNumber("australian", "shepherd", 2)

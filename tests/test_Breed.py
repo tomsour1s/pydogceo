@@ -15,7 +15,7 @@ class TestBreed:
         dog = PyDogCeo()
         r = dog.breed.subbreedRandomNumber("terrier", 2)
         assert r.status_code == 200
-    
+
     def test_images(self):
         dog = PyDogCeo()
         r = dog.breed.image("terrier")

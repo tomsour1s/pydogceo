@@ -1,12 +1,10 @@
-from pydogceo.request.BaseRequest import BaseRequests
-
-from ..request.BaseRequest import BaseRequests
 from requests import Response
 
+from pydogceo.request.BaseRequest import BaseRequests
+from ..request.BaseRequest import BaseRequests
+
 class Images(BaseRequests):
-    def __init__(self) -> None:
-        super().__init__()
-    
+
     def random(self, breed: str) -> Response:
         """ Get random image from a breed (and all its sub-breeds).
 
@@ -15,7 +13,7 @@ class Images(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/images/random")
 
     def randomNumber(self, breed: str, number: int) -> Response:
@@ -27,7 +25,7 @@ class Images(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/images/random/{number}")
 
     def subbread(self, breed: str, subbreed: str) -> Response:
@@ -39,7 +37,7 @@ class Images(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/{subbreed}/images/")
 
     def subbreadRandom(self, breed: str, subbreed: str) -> Response:
@@ -51,7 +49,7 @@ class Images(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/{subbreed}/images/random")
 
     def subbreadRandomNumber(self, breed: str, subbreed: str, number: int) -> Response:
@@ -64,5 +62,5 @@ class Images(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/{subbreed}/images/random/{number}")

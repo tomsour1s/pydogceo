@@ -10,3 +10,4 @@ class TestImage:
         dog = PyDogCeo()
         r = dog.breeds.image.randomNumber(2)
         assert r.status_code == 200
+        

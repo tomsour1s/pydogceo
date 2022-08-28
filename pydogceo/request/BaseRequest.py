@@ -8,6 +8,6 @@ class BaseRequests(BaseConfiguration):
     def GET(self, requestUrl: str) -> Response:
         return self.session.get(self.createRequestUrl(requestUrl), timeout=self.BASE_REQUEST_TIMEOUT)
     
-    def createRequestUrl(self, requestUrl) -> str:
+    def createRequestUrl(self, requestUrl: str) -> str:
         return self.BASE_API_URL + requestUrl
 

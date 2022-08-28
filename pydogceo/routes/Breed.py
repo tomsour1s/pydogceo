@@ -1,6 +1,7 @@
+from requests import Response
+
 from ..request.BaseRequest import BaseRequests
 from .Images import Images
-from requests import Response
 
 class Breed(BaseRequests):
     def __init__(self) -> None:
@@ -15,7 +16,7 @@ class Breed(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/list")
 
     def subbreedRandom(self, breed: str) -> Response:
@@ -26,7 +27,7 @@ class Breed(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/list/random")
 
     def subbreedRandomNumber(self, breed: str, number: int) -> Response:
@@ -38,9 +39,9 @@ class Breed(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/list/random/{number}")
-    
+
     def image(self, breed: str) -> Response:
         """ Get all breed images.
 
@@ -49,7 +50,7 @@ class Breed(BaseRequests):
 
         Returns:
             :class:`Response <Response>` object
-        """        
+        """
         return self.GET(f"/breed/{breed}/images")
 
 
