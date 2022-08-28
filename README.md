@@ -4,7 +4,7 @@ PyDogCeo
 
 
 PyDogCeo is a thin wrapper on top of the [DogCEO-API](https://dog.ceo). 
-[github](https://github.com/ElliottLandsborough/dog-ceo-api)
+[DOG-CEO on GITHUB](https://github.com/ElliottLandsborough/dog-ceo-api)
 
 
 To Start...
@@ -12,9 +12,9 @@ To Start...
 
 To install pydogceo:
 
-::
-
+```bash
     pip install pydogceo
+```
 
 
 Using it...
@@ -62,10 +62,8 @@ dog.breed.images.subbreadRandomNumber("hound", "afghan", 10)
 Changelog
 ---------
 
-Removed riotewatcher.legacy namespace and API. Please (finally) update to the
-v3 API.
-
 v0.0.1- 28/08/2022
+First Release :)
+
 ~~~~~~~~~~~~~~~~~
 
-First Release :)
