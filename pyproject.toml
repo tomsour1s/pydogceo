@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "pydogceo-tomsouris"
 version = "0.0.1"
 authors = [
-  { name="Thomas Maus", email="thomas.maus90@gmail.com" },
+  { name="tomsouris", email="thomas.maus90@gmail.com" },
 ]
 description = "A Python API Wrapper for the DOG CEO API"
 readme = "README.md"
